@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Duck</title>
+    <link rel="icon" href="/static/favicon.ico">
+    <!-- them icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- them font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/reset.css">
+    <link rel="stylesheet" href="/static/index.css">
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="http://chefduck.ru" class="logo">
+            <img src="/static/logo.svg" alt="logo">
+        </a>
+        <div class="menu1">
+            <a href="tel:+7 925 222 85 85" class="tel menu1Item">
+                <img src="/static/phone-call1.png" alt="">
+                <h3>+7 925 222 85 85</h3>
+            </a>
+            <a class="about menu1Item" onclick="toSlide1()">
+                <p>О нас</p>
+            </a>
+            <a class="MenuProduct menu1Item" onclick="toSlide3()">
+                <p>Продукты</p>
+            </a>
+            <a href="https://instagram.com" class="menuRecept menu1Item">
+                <p>Рецепты</p>
+            </a>
+            <a class="menuContact menu1Item" onclick="toSlide5()">
+                <p>Контакт</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="slide1" class="slide1">
+        <video autoplay muted loop id="videoBackground">
+            <source src="/static/chefduck.mp4" type="video/mp4">
+        </video>
+        <div class="background1" id="background1"></div>
+        <div class="textSlide1">
+            <p class="textduck1">Вкусная утка</p>
+            <p class="textduck2">по-азиатски за 20мин</p>
+            <div class="buttonSlide1">
+                <button class="order" onclick="toSlide3()">Заказать</button>
+                <button class="more" onclick="toSlide2()">Поподробнее</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="slide2" id="slide2">
+        <div class="textSlide2">
+            <p class="text1Slide2">Что такое утка Chef duck ?</p>
+            <div class="line1"></div>
+            <div class="text2Slide2">
+                <p>Это превосходно запеченная вкусная утка высшего качества в азиатских специях, приготовленная на
+                    новейших европейских оборудованиях.</p>
+                <p>Уникальность нашего продукта в том, что он очень удобен в хранении за счет заморозки, однако его
+                    вкус
+                    в готовом виде абсолютно не похож на то, что продукт был когда-либо заморожен.
+                </p>
+                <p>Утку всего лишь надо запечь на 20мин и она готова к употреблению.</p>
+            </div>
+        </div>
+
+
+        <img src="/static/bg2.png" alt="">
+        <div class="background2" id="background2"></div>
+    </div>
+    <div class="slide3" id="slide3">
+        <img class="imgBg3" src="/static/bg3.png" alt="">
+        <div class="background3"></div>
+        <div class="product">
+            <div class="productItem">
+                <img src="/static/vit_khong_xuong.jpg" alt="">
+                <p class="nameProduct">Филе утки в азиатском стиле</p>
+                <button class="order" onclick="toSlide5()">Заказать</button>
+            </div>
+            <div class="productItem">
+                <img src="/static/vit_ca_con.jpg" alt="">
+                <p class="nameProduct">Целая утка в азиатском стиле</p>
+                <button class="order" onclick="toSlide5()">Заказать</button>
+            </div>
+            <div class="productItem">
+                <img src="/static/dui_ga.jpg" alt="">
+                <p class="nameProduct">Филе куринного бедра в азиатском стиле</p>
+                <button class="order" onclick="toSlide5()">Заказать</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="slide4" id="slide4">
+        <img class="imgBg4" src="/static/bg4.png" alt="">
+        <div class="background3"></div>
+
+        <div class="faq">
+            <div class="titleSlide4">
+                <p class="textTitle4">Вопросы и Ответы</p>
+                <img src="/static/faq.png" alt="" class="imgFaq">
+            </div>
+            <hr>
+            <div class="contentFaq">
+                <div class="contentFaqItem">
+                    <input type="checkbox" name="" id="question1">
+                    <div class="contentFaq1">
+                        <div class="q1 question">
+                            <span>*Какой опыт вы имеете в работе ?</span>
+                        </div>
+                        <div class="ans1  answer">
+
+                            Мы уже 10 лет существуем на рынке Европы. Наш продукт пользуется большим спросом в таких
+                            странах, как Германия, Чехия, Австрия, Словакия.
+
+                        </div>
+                    </div>
+                    <label for="question1" class="iconExpand icon1">+</label>
+                    <label for="question1" class="iconCollap icon1">-</label>
+                </div>
+                <hr>
+                <div class="contentFaqItem">
+                    <input type="checkbox" name="" id="question2">
+                    <div class="contentFaq1">
+                        <div class="q2 question">
+                            <span>*Из чего сделаны ваши продукты ?</span>
+                        </div>
+                        <div class="ans2 answer">
+                            <span>
+                                Наша компания закупает мясо, выращенное в экологически чистых районах, без применения
+                                антибиотиков,
+                                ГМО и химии. Наша утка имеет сертификат Халяль. </span>
+                        </div>
+                    </div>
+                    <label for="question2" class="iconExpand icon1">+</label>
+                    <label for="question2" class="iconCollap icon1">-</label>
+                </div>
+                <hr>
+                <div class="contentFaqItem">
+                    <input type="checkbox" name="" id="question3">
+
+                    <div class="contentFaq1">
+                        <div class="q3 question">
+                            <span>*Какое качество у вашего продукта ? </span>
+                        </div>
+                        <div class="ans3 answer">
+                            <span>
+                                Контроль качества продукции осуществляется на всех этапах ее производства.
+                                Наш продукт сертифицирован, а нашем производстве внедрена система ХАССП.
+                            </span>
+                        </div>
+                    </div>
+                    <label for="question3" class="iconExpand icon1">+</label>
+                    <label for="question3" class="iconCollap icon1">-</label>
+                </div>
+                <hr>
+                <div class="contentFaqItem">
+                    <input type="checkbox" name="" id="question4">
+
+                    <div class="contentFaq1">
+                        <div class="q4 question">
+                            <span>*Какие мощности у вашего производства? </span>
+                        </div>
+                        <div class="ans4 answer">
+                            <span>
+                                Мы построили новое производство, оснащенное современным европейским оборудованием. Наше
+                                производство
+                                может выдавать 25тонн готовой продукции в месяц. Также мы запланировали в ближайщее
+                                время
+                                увеличить
+                                мощность производства до 40тонн/мес. </span>
+                        </div>
+                    </div>
+                    <label for="question4" class="iconExpand icon1">+</label>
+                    <label for="question4" class="iconCollap icon1">-</label>
+                </div>
+                <hr>
+                <div class="contentFaqItem">
+                    <input type="checkbox" name="" id="question5">
+
+                    <div class="contentFaq1">
+                        <div class="q5 question">
+                            <span>*Какие блюда можно приготовить из вашей продукции?</span>
+                        </div>
+                        <div class="ans5 answer">
+                            <span>
+                                Мы постоянно обновляем рецепты на платформе Instagram.(ссылка).
+                                Там любой заинтересующий человек, может увидеть новые рецепты с использованием нашего
+                                продукта.
+                            </span>
+                        </div>
+                    </div>
+                    <label for="question5" class="iconExpand icon1">+</label>
+                    <label for="question5" class="iconCollap icon1">-</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide5" id="slide5">
+        <img class="imgBg5" src="/static/bg5.JPG" alt="">
+        <div class="background3"></div>
+
+        <div class="comment">
+            <p class="titleComm">Хотите ли Вы с нами сотрудничать?</p>
+            <form class="contentComm" method="post">
+                <div class="info">
+                    <div class="inputComm">
+                        <label class="labelName labelInput" for="nameClient">Ваш ФИО:</label>
+                        <input type="text" name="nameClient" id="nameClient" placeholder="Ваш ФИО">
+                    </div>
+                    <div class="inputComm">
+                        <label class="labelEmail labelInput" for="emailClient">Ваша почта(e-mail)</label>
+                        <input type="text" name="emailClient" id="emailClient" placeholder="Ваша почта(e-mail)">
+                    </div>
+                    <div class="inputComm">
+                        <label class="labelTel labelInput" for="telClient">Ваш номер телефона</label>
+                        <input type="text" name="telClient" id="telClient" placeholder="Ваш номер телефона">
+                    </div>
+                    <div class="inputComm">
+                        <label class="labelMess labelInput" for="messageClient">Напишите Ваш сообщение</label>
+                        <input type="text" name="messageClient" id="messageClient" placeholder="Напишите Ваш сообщение">
+                    </div>
+
+                </div>
+                <button type="submit">Оправить</button>
+            </form>
+        </div>
+        <div class="contact">
+            <img src="/static/logo2.png" alt="">
+            <p class="nameCompany">Компания: "ЕВРО ФУД"</p>
+            <div class="contentContact">
+                <p>Адрес: <a>Российская Федерация, 111123, Москва Г,
+                        Ш Энтузиастов, д. 56, корп. СТР 43, ЭI К7,8,9</a> </p>
+                <p>E-mail: <a href="mailto:chefduck@yandex.ru?subject=Новый партнер"> chefduck@yandex.ru</a>
+                </p>
+                <p> Tel. : <a href="tel:+7 925 222 85 85">+7 925 222 85 85</a>
+                </p>
+                <p>Website: <a href="http://www.chefduck.ru">www.chefduck.ru</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="/static/index.js"></script> -->
+<script>
+    var slide1 = document.getElementById("background1");
+    var slide2 = document.getElementById("background2");
+    var slide3 = document.getElementById("slide3");
+    var slide4 = document.getElementById("slide4");
+    var slide5 = document.getElementById("slide5");
+
+    function toSlide3() {
+        slide3.scrollIntoView({ behavior: 'smooth' });
+    }
+    function toSlide2() {
+        slide2.scrollIntoView({ behavior: 'smooth' });
+    }
+    function toSlide1() {
+        slide1.scrollIntoView({ behavior: 'smooth' });
+    }
+    function toSlide5() {
+        slide5.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</html>

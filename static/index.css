@@ -1,0 +1,469 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: gray;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  z-index: 1000;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+  font-size: 22px;
+}
+.menu1Item {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.menu1Item p {
+  margin-top: 18px;
+}
+.menu1 .tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu1Item img {
+  margin-right: 10px;
+  width: 54px;
+  height: 54px;
+}
+
+.logo {
+  height: 100px;
+  width: 180px;
+  display: block;
+  padding: 10px 10px;
+}
+
+.slide1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1000px;
+  z-index: 10;
+  justify-content: center;
+  overflow-y: scroll;
+  scroll-snap-align: center;
+  scroll-snap-type: y mandatory;
+}
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -2;
+  /* min-width: 100%;
+  min-height: 100%; */
+}
+
+.background1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background: #000000a8;
+  z-index: 0;
+  /* mix-blend-mode: overlay; */
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #de976f;
+  cursor: pointer;
+  color: white;
+  font-size: 28;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #757575;
+  border: 1px solid white;
+}
+.textSlide1 {
+  position: relative;
+  z-index: 1;
+}
+.textduck1 {
+  color: white;
+
+  font-weight: bold;
+  font-size: 76px;
+  margin-bottom: 10px;
+}
+.textduck2 {
+  color: white;
+
+  font-weight: lighter;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.slide2 {
+  position: absolute;
+  top: 1000px;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #493f3a9a;
+  overflow-y: scroll;
+  scroll-snap-align: center;
+}
+.textSlide2 {
+  width: 1000px;
+  text-align: center;
+  color: white;
+  align-items: center;
+}
+.text1Slide2 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.line1 {
+  height: 2px;
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.text2Slide2 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.text2Slide2 p {
+  margin-top: 30px;
+}
+
+.slide2 img {
+  position: absolute;
+  top: 0px;
+  z-index: -2;
+  height: 1000px;
+  width: 100%;
+}
+.background2 {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  height: 1000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+.slide3 {
+  position: absolute;
+  top: 2000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 1000px;
+  width: 100%;
+  margin: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.slide3 .imgBg3{
+  position: absolute;
+  top: 0;
+  height: 1000px;
+  width: 100%;
+  z-index: -2;
+}
+.background3{
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  height: 1000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+ 
+}
+.product {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.productItem {
+  margin: 0 20px;
+  width: 450px;
+  height: 600px;
+  text-align: center;
+}
+
+.productItem img {
+  border: solid 10px white;
+  width: 450px;
+  height: 540px;
+  margin-bottom: 20px;
+}
+.productItem p {
+  position: absolute;
+  top: 690px;
+  width: 450px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+.slide4 {
+  position: absolute;
+  top: 3000px;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background-color: #493f3a; */
+}
+.slide4 .imgBg4{
+  position: absolute;
+  top: 0;
+  height: 1000px;
+  width: 100%;
+  z-index: -2;
+}
+
+.faq {
+  max-width: 1000px;
+  margin-top: 100px;
+}
+.titleSlide4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleSlide4 p {
+  font-size: 60px;
+  font-weight: bold;
+}
+.titleSlide4 img {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+.contentFaqItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.contentFaq .question {
+  font-size: 32px;
+  margin: 5px 10px;
+}
+.contentFaq .answer {
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 10px 10px;
+  display: none;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(211, 211, 211);
+}
+.contentFaq .icon1 {
+  font-size: 50px;
+  cursor: pointer;
+}
+.iconCollap {
+  display: none;
+}
+.contentFaq input {
+  display: none;
+}
+#question1:checked ~ .iconExpand {
+  display: none;
+}
+#question1:checked ~ .iconCollap {
+  display: block;
+}
+#question2:checked ~ .iconExpand {
+  display: none;
+}
+#question2:checked ~ .iconCollap {
+  display: block;
+}
+#question3:checked ~ .iconExpand {
+  display: none;
+}
+#question3:checked ~ .iconCollap {
+  display: block;
+}
+#question4:checked ~ .iconExpand {
+  display: none;
+}
+#question4:checked ~ .iconCollap {
+  display: block;
+}
+#question5:checked ~ .iconExpand {
+  display: none;
+}
+#question5:checked ~ .iconCollap {
+  display: block;
+}
+
+#question1:checked ~ .contentFaq1 .answer {
+  display: block;
+}
+#question2:checked ~ .contentFaq1 .answer {
+  display: block;
+}
+#question3:checked ~ .contentFaq1 .answer {
+  display: block;
+}
+#question4:checked ~ .contentFaq1 .answer {
+  display: block;
+}
+#question5:checked ~ .contentFaq1 .answer {
+  display: block;
+}
+
+/* -------------------------------------- */
+.slide5 {
+  position: absolute;
+  top: 4000px;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #5c4030; */
+  color: white;
+}
+.slide5 .imgBg5{
+  position: absolute;
+  top: 0;
+  height: 1000px;
+  width: 100%;
+  z-index: -2;
+}
+.comment {
+  margin-right: 150px;
+  min-width: 400px;
+}
+.contentComm {
+  margin-left: 50px;
+}
+.inputComm {
+  padding-top: 10px;
+}
+.info input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 18px;
+  padding: 10px 0;
+  background: transparent;
+  color: white;
+  transition: 0.2s;
+}
+.info label {
+  /* position: relative;
+  top: 20; */
+  display: block;
+  transition: 0.2s;
+  font-size: 28px;
+  color: rgba(243, 9, 9, 0);
+}
+.info input::placeholder {
+  color: rgb(199, 199, 199);
+}
+
+.info input:required {
+  box-shadow: none;
+}
+.info input:invalid {
+  box-shadow: none;
+}
+
+.titleComm {
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  max-width: 600px;
+}
+.contentContact {
+  margin-top: 20px;
+}
+.nameCompany {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contentContact p {
+  padding: 3px 0;
+  line-height: 1.3;
+  font-size: 20px;
+}
+
+.contact img {
+  height: 200px;
+  width: 200px;
+  margin: 20px 20px;
+}
+.contentComm button {
+  margin-top: 50px;
+}
+.contentContact a {
+  text-decoration: none;
+  color: #3eda00;
+}
