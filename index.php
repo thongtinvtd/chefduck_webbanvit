@@ -13,7 +13,8 @@
     <!-- them font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/static/reset.css">
     <link rel="stylesheet" href="/static/index.css">
@@ -56,7 +57,8 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
 
         // Sender and recipient settings
         $mail->setFrom('chefduckbot@gmail.com', 'ChefDuck_web');
-        $mail->addAddress('thongtinvtd@gmail.com', 'Receiver Name');
+        $mail->addAddress('Chefduck@yandex.ru', 'Receiver Name');
+        // $mail->addAddress('thongtinvtd@gmail.com', 'Receiver Name');
         // $mail->addReplyTo('chefduckbot@gmail.com', 'Sender Name'); // to set the reply to
         $date = date('d-m-Y H:i:s') . '<br>';
         $textMail = "Thoi gian: $date Ten khach hang:  $nameClient Email: $emailClient So dien thoai: $telClient Tin nhan : $messageClient";
@@ -82,14 +84,14 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
             <img src="/static/logo.svg" alt="logo">
         </a>
         <div class="menu1">
-            <a href="tel:+7 925 222 85 85" class="tel menu1Item">
+            <a href="tel:+7 925 222 85 85" class="tel">
                 <img src="/static/phone-call1.png" alt="">
                 <h3>+7 925 222 85 85</h3>
             </a>
             <a class="about menu1Item" onclick="toSlide1()">
                 <p>О нас</p>
             </a>
-            <a class="MenuProduct menu1Item" onclick="toSlide3()">
+            <a class="menuProduct menu1Item" onclick="toSlide3()">
                 <p>Продукты</p>
             </a>
             <a href="https://instagram.com" class="menuRecept menu1Item">
@@ -106,7 +108,7 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
         <video autoplay muted loop id="videoBackground">
             <source src="/static/chefduck.mp4" type="video/mp4">
         </video>
-        <div class="background1" id="background1"></div>
+        <div class="background3" id="background1"></div>
         <div class="textSlide1">
             <p class="textduck1">Вкусная утка</p>
             <p class="textduck2">по-азиатски за 20мин</p>
@@ -134,11 +136,11 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
 
 
         <img src="/static/bg2.png" alt="">
-        <div class="background2" id="background2"></div>
+        <div class="background3" id="background2"></div>
     </div>
     <div class="slide3" id="slide3">
         <img class="imgBg3" src="/static/bg3.png" alt="">
-        <div class="background3"></div>
+        <div class="background3" id="background3"></div>
         <div class="product">
             <div class="productItem">
                 <img src="/static/vit_khong_xuong.jpg" alt="">
@@ -161,7 +163,7 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
     </div>
     <div class="slide4" id="slide4">
         <img class="imgBg4" src="/static/bg4.png" alt="">
-        <div class="background3"></div>
+        <div class="background3" id="background4"></div>
 
         <div class="faq">
             <div class="titleSlide4">
@@ -278,7 +280,8 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
                     </div>
                     <div class="inputComm">
                         <label class="labelEmail labelInput" for="emailClient">Ваша почта(e-mail)</label>
-                        <input type="text" name="emailClient" id="emailClient" placeholder="Ваша почта(e-mail)" required>
+                        <input type="text" name="emailClient" id="emailClient" placeholder="Ваша почта(e-mail)"
+                            required>
                     </div>
                     <div class="inputComm">
                         <label class="labelTel labelInput" for="telClient">Ваш номер телефона</label>
