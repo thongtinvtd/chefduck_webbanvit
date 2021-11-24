@@ -84,22 +84,33 @@ if (isset($_POST['nameClient']) && isset($_POST['emailClient']) && isset($_POST[
             <img src="/static/logo.svg" alt="logo">
         </a>
         <div class="menu1">
+            <input type="checkbox" name="triggerMenu" id="triggerMenu" style="display: none;">
             <a href="tel:+7 925 222 85 85" class="tel">
                 <img src="/static/phone-call1.png" alt="">
                 <h3>+7 925 222 85 85</h3>
             </a>
-            <a class="about menu1Item" onclick="toSlide1()">
-                <p>О нас</p>
-            </a>
-            <a class="menuProduct menu1Item" onclick="toSlide3()">
-                <p>Продукты</p>
-            </a>
-            <a href="https://instagram.com" class="menuRecept menu1Item">
-                <p>Рецепты</p>
-            </a>
-            <a class="menuContact menu1Item" onclick="toSlide5()">
-                <p>Контакт</p>
-            </a>
+            <div class="menu1Item">
+                <a class="about " onclick="toSlide1()">
+                    <p>О нас</p>
+                </a>
+                <a class="menuProduct " onclick="toSlide3()">
+                    <p>Продукты</p>
+                </a>
+                <a href="https://instagram.com" class="menuRecept ">
+                    <p>Рецепты</p>
+                </a>
+                <a class="menuContact " onclick="toSlide5()">
+                    <p>Контакт</p>
+                </a>
+            </div>
+
+            <div class="menu2">
+                <label for="triggerMenu"><img class="iconMenu" src="/static/menu.png" alt="" srcset=""
+                        style="filter: invert(1);"></label>
+                <label for="triggerMenu"><img class="iconClose" src="/static/close.png" alt="" srcset=""
+                        style="filter: invert(1);"></label>
+            </div>
+
         </div>
     </div>
 
